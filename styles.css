@@ -50,31 +50,79 @@ table {
 	border-spacing: 0;
 }
 
+/*hide skip link */
+#skip {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+/* web styles */
+header {
+    background: linear-gradient(to bottom, #55BCD5, white);
+
+}
+
+img[src="images/logo.png"] {
+    height: 156px;
+    
+}
+
+
+
+nav {
+    height: 48px;
+	display: grid;
+}
+
+nav li {
+    display: inline-flex;
+	align-items: right;
+    width: 10%;
+}
+
+nav li a {
+    display: inline;
+    padding: 20px;
+	color: #222;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    position: absolute;
+    top: 0px;
+	
+}
+
+nav li a:hover {
+    background-color: #F6D64A;
+}
+
 /* Phone Menu */
 
 @media (max-width: 429px) {
-    #menu-toggle {
-      display: block;
+    html {
+        width: 429px;
     }
-  
-    #menu-toggle label {
-      display: block;
-      width: 100%;
-      text-align: center;
+    body {
+        width: 429px;
+        margin: 0 auto;
+      }
+    
+    header {
+        background: linear-gradient(to bottom, #55BCD5, white);
     }
-  
-    #menu-toggle ul {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #444;
+    
+    header img {
+        display: flex;
+        align-items: left;
+        width: 160.3px;
+        height: 69.5px;
     }
-  }
-  
-  
-  
-  
-  
-  
-  
+    
+    h1 {
+        font-size: 40px;
+    
+    }
+}
