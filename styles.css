@@ -50,55 +50,163 @@ table {
 	border-spacing: 0;
 }
 
-/*hide skip link */
-#skip {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-  }
 
 /* web styles */
-header {
-    background: linear-gradient(to bottom, #55BCD5, white);
 
+#intro {
+    display: grid;
+    height: 844px;
+    width: 1920px;
+    grid-template-columns: repeat(6, 1fr 1fr 1fr );
+    grid-template-rows: 10px;
 }
 
-img[src="images/logo.png"] {
-    height: 156px;
-    
+#intro h2{
+    font-size: 75px;
+    display: grid;
+	justify-content: space-evenly;
 }
 
+#intro p {
+    display: grid;
+	grid-column: 1;
+	padding: 100px;
+	text-align: center;
+	justify-content: space-evenly;
+}
 
+#intro img {
+    display: grid;
+	float: right;
+}
 
-nav {
-    height: 48px;
+#plan {
+	background-color:#F6D64A;
+    height: 652px;
+    width: 1920px;
 	display: grid;
+	gap: 150px 100px;
+	grid-template-rows: auto auto auto auto 1fr;
 }
 
-nav li {
-    display: inline-flex;
-	align-items: right;
-    width: 10%;
+#plan section {
+	display: inline-grid;
+	background-color: #55BCD5;
+	height: 336px;
+    width: 398px;
+	font-size: 30px;
+	text-align: center;	
 }
 
-nav li a {
-    display: inline;
-    padding: 20px;
-	color: #222;
-    background-color: #FFFFFF;
-    text-decoration: none;
-    position: absolute;
-    top: 0px;
+#plan h3 {
+	display: grid;
+	text-align: left;
+	font-size: 40px;
+}
+
+#testimonials {
+	height: 668px;
+    width: 1920px;
+	display: grid;
+	gap: 14px 11px;
+	grid-template-rows: auto auto auto auto 1fr;
+}
+
+#testimonials h3 {
+	display: grid;
+	font-size: 50px;
+	text-align: center;
 	
 }
 
-nav li a:hover {
-    background-color: #F6D64A;
+#testimonials img {
+	padding: 100px;
 }
 
+#testimonials h4 {
+	display: inline-grid;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#testimonials section {
+	display: inline-grid;
+	height: 336px;
+    width: 398px;
+	text-align: center;	
+}
+
+#about {
+	background: #499BD2;
+	height: 546px;
+    width: 1920px;
+	display: grid;
+	gap: 10px 110px;
+	grid-template-rows: 2fr 2fr 2fr 2fr; 
+	
+}
+
+#about h3 {
+	font-size: 20px;
+	text-align: center;
+}
+
+#about section {
+	display: inline-grid;
+}
+
+#about img {
+	padding: 153px;
+}
+
+#about h4 {
+	display: grid;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#about p {
+	display: grid;
+	text-align: center;
+}
+
+#contact {
+	height: 657px;
+    width: 1920px;
+}
+
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #9B26B0;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+footer {
+	height: 78px;
+    width: 1920px;
+	background: #EAEAEA;
+	clear: both; 
+}
+
+footer p {
+	font-size: small;
+	float: left;
+	padding: 30px;
+}
+
+footer a {
+	font-size: small;
+	float: right;
+	text-decoration: none;
+	padding: 30px;
+}
 /* Phone Menu */
 
 @media (max-width: 429px) {
@@ -116,7 +224,6 @@ nav li a:hover {
     
     header img {
         display: flex;
-        align-items: left;
         width: 160.3px;
         height: 69.5px;
     }
